@@ -1,0 +1,2 @@
+# Wajibkan pelapor memakai salah satu template (issue kosong dinonaktifkan)
+blank_issues_enabled: false

@@ -1,0 +1,23 @@
+name: 💡 Masukan
+description: Sampaikan ide, usulan fitur, atau saran perbaikan.
+title: "[Masukan]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: layanan
+    attributes:
+      label: Layanan
+      options:
+        - SIMBA
+        - Lainnya
+    validations:
+      required: true
+
+  - type: textarea
+    id: masukan
+    attributes:
+      label: Masukan atau ide
+      description: Apa yang ingin Anda usulkan, dan kenapa?
+      placeholder: "Contoh: Tambahkan ringkasan status pendaftaran sidang di dashboard agar tidak perlu membuka banyak menu."
+    validations:
+      required: true

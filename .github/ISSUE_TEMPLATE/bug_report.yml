@@ -1,0 +1,34 @@
+name: 🐞 Laporan Bug
+description: Laporkan error atau fitur yang tidak berjalan semestinya.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Jangan menuliskan password atau data pribadi, karena laporan ini bersifat publik."
+
+  - type: dropdown
+    id: layanan
+    attributes:
+      label: Layanan
+      options:
+        - SIMBA
+        - NALA
+        - Lainnya
+    validations:
+      required: true
+
+  - type: textarea
+    id: deskripsi
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan bug-nya dan langkah sampai bug itu muncul.
+      placeholder: "Contoh: Buka menu Sempro > klik Simpan > muncul error dan data tidak tersimpan."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Opsional, seret gambar ke kolom ini.
